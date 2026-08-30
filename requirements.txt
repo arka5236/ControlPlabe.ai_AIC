@@ -1,0 +1,22 @@
+# Web Server & API Routing
+fastapi>=0.110.0
+uvicorn[standard]>=0.28.0
+pydantic>=2.6.0
+httpx>=0.27.0
+
+# LLM Framework & Evaluators
+langchain>=0.1.0
+langchain-core>=0.1.0
+langchain-huggingface>=0.1.0
+langgraph>=0.0.26
+python-dotenv>=1.0.1
+
+# Persistence & Audit Trail
+langgraph-checkpoint-sqlite>=1.0.0
+aiosqlite>=0.18.0
+
+# Frontend UI
+streamlit>=1.32.0
+
+prometheus-fastapi-instrumentator>=6.0.0
+prometheus-client>=0.19.0

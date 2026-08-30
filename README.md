@@ -48,13 +48,13 @@ python -m streamlit run streamlit_app.py
 The application will be available at http://localhost:8501.
 
 🗄️ Database & Memory Management
-PaDIS uses a local SQLite instance (chatbot.db) for zero-configuration deployments. It automatically provisions two critical tables:
+ControlPlane uses a local SQLite instance (chatbot.db) for zero-configuration deployments. It automatically provisions two critical tables:
 
 LangGraph Checkpoints: Saves the complete BaseMessage history of every thread for multi-turn conversational memory.
 
 Human Feedback (human_feedback): Stores timestamped 👍/👎 actions linked to the specific thread_id for offline anomaly review.
 
-🛠️ Future Roadmap
+## 🛠️ Future Roadmap
 Semantic Anomaly Detection: Implement local HuggingFaceEmbeddings to cluster and identify adversarial jailbreak vectors pre-generation.
 
 Retrieval-Based Verification: Connect FAISS/ChromaDB to the llm_evaluators node to ground hallucination scores in verifiable source documents.
